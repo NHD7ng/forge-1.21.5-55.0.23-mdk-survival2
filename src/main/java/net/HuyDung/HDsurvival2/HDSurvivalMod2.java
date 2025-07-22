@@ -106,6 +106,10 @@ public class HDSurvivalMod2 {
             event.accept(ModBlocks.ALEXANDRITE_BLOCK);
         }
 
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
+            event.accept(ModBlocks.ALEXANDRITE_ORE);
+        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

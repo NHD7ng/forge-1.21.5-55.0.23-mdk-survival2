@@ -24,8 +24,13 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ALEXANDRITE_BLOCK = registryBlock("alexandrite_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(HDSurvivalMod2.MOD_ID, "alexandrite_block")))
+                    .setId(BLOCKS.key("alexandrite_block"))
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> ALEXANDRITE_ORE = registryBlock("alexandrite_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .setId(BLOCKS.key("alexandrite_ore"))
+                    .strength(4f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -34,7 +39,8 @@ public class ModBlocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block ){
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(HDSurvivalMod2.MOD_ID, "alexandrite_block")) )));
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()
+                .setId(ModItems.ITEMS.key(name)) ));
     }
 
     public static void register(IEventBus eventBus){
