@@ -1,6 +1,7 @@
 package net.HuyDung.HDsurvival2;
 
 import com.mojang.logging.LogUtils;
+import net.HuyDung.HDsurvival2.blocks.ModBlocks;
 import net.HuyDung.HDsurvival2.items.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -81,6 +82,7 @@ public class HDSurvivalMod2 {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -97,10 +99,11 @@ public class HDSurvivalMod2 {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.ALEXANDRITE);
+            event.accept(ModItems.RAW_ALEXANDRITE);
         }
 
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.RAW_ALEXANDRITE);
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.ALEXANDRITE_BLOCK);
         }
 
     }
