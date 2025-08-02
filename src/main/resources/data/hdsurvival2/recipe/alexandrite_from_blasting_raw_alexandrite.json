@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "alexandrite",
+  "ingredient": "hdsurvival2:raw_alexandrite",
+  "result": {
+    "id": "hdsurvival2:alexandrite"
+  }
+}
