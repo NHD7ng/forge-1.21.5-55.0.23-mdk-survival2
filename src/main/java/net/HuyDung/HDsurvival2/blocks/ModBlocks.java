@@ -32,6 +32,11 @@ public class ModBlocks {
                     .setId(BLOCKS.key("alexandrite_ore"))
                     .strength(4f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> MAGIC_GEM_ORE = registryBlock("magic_gem_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .setId(BLOCKS.key("magic_gem_ore"))
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
     private static <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

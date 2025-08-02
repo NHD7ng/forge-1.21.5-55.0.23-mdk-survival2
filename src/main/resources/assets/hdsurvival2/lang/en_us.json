@@ -1,10 +1,14 @@
 {
   "item.hdsurvival2.alexandrite" : "Alexandrite Gem",
   "item.hdsurvival2.raw_alexandrite" : "Raw Alexandrite",
+  "item.hdsurvival2.magic_gem" : "Magic Gem",
 
   "item.hdsurvival2.alexandrite_block" : "Block of Alexandrite",
   "block.hdsurvival2.alexandrite_block" : "Block of Alexandrite",
 
   "item.hdsurvival2.alexandrite_ore" : "Alexandrite Ore",
-  "block.hdsurvival2.alexandrite_ore" : "Alexandrite Ore"
+  "block.hdsurvival2.alexandrite_ore" : "Alexandrite Ore",
+
+  "item.hdsurvival2.magic_gem_ore" : "Magic Gem Ore",
+  "block.hdsurvival2.magic_gem_ore" : "Magic Gem Ore"
 }

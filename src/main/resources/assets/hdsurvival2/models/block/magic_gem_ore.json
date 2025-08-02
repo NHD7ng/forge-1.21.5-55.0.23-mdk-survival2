@@ -1,0 +1,6 @@
+{
+  "parent":  "minecraft:block/cube_all",
+  "textures": {
+    "all": "hdsurvival2:block/magic_gem_ore"
+  }
+}

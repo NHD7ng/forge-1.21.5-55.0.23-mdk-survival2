@@ -100,6 +100,7 @@ public class HDSurvivalMod2 {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.ALEXANDRITE);
             event.accept(ModItems.RAW_ALEXANDRITE);
+            event.accept(ModItems.MAGIC_GEM);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
@@ -108,6 +109,7 @@ public class HDSurvivalMod2 {
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModBlocks.ALEXANDRITE_ORE);
+            event.accept(ModBlocks.MAGIC_GEM_ORE);
         }
 
     }

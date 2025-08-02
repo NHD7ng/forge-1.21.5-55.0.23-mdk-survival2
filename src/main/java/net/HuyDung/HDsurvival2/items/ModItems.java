@@ -17,6 +17,9 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_ALEXANDRITE = ITEMS.register("raw_alexandrite",
             () -> new Item(new Item.Properties().setId(ITEMS.key("raw_alexandrite"))));
 
+    public static final RegistryObject<Item> MAGIC_GEM = ITEMS.register("magic_gem",
+            () -> new Item(new Item.Properties().setId(ITEMS.key("magic_gem"))));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
