@@ -6,8 +6,14 @@
   "item.hdsurvival2.alexandrite_block" : "Block of Alexandrite",
   "block.hdsurvival2.alexandrite_block" : "Block of Alexandrite",
 
+  "item.hdsurvival2.raw_alexandrite_block" : "Raw Alexandrite Block",
+  "block.hdsurvival2.raw_alexandrite_block" : "Raw Alexandrite Block",
+
   "item.hdsurvival2.alexandrite_ore" : "Alexandrite Ore",
   "block.hdsurvival2.alexandrite_ore" : "Alexandrite Ore",
+
+  "item.hdsurvival2.alexandrite_deepslate_ore" : "Alexandrite Deepslate Ore",
+  "block.hdsurvival2.alexandrite_deepslate_ore" : "Alexandrite Deepslate Ore",
 
   "item.hdsurvival2.magic_gem_ore" : "Magic Gem Ore",
   "block.hdsurvival2.magic_gem_ore" : "Magic Gem Ore"
